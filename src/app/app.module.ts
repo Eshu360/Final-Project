@@ -16,6 +16,7 @@ import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
 import { ThemeComponent } from './theme/theme.component';
 import { ChildComponent } from './child/child.component';
+import { MapsComponent } from './maps/maps.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ChildComponent } from './child/child.component';
      AddProductComponent,
      AdminComponent,
      ThemeComponent,
-     ChildComponent
+     ChildComponent,
+     MapsComponent
   ],
   imports: [
     BrowserModule,

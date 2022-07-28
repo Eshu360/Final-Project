@@ -5,6 +5,7 @@ import { AdminComponent } from './admin/admin.component';
 import {AuthGuard} from './services/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { MapsComponent } from './maps/maps.component';
 import { NgModule } from '@angular/core';
 import {RoleGuard} from './services/role.guard';
 import { SignupComponent } from './signup/signup.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
  {path:'dashboard', component:DashboardComponent, canActivate:[AuthGuard]},
  {path:'product',component:AddProductComponent},
  {path:'admin',component:AdminComponent , canActivate:[RoleGuard]},
- {path:'theme',component:ThemeComponent}
+ {path:'theme',component:ThemeComponent},
+ {path:'maps',component:MapsComponent}
 
 
 ];

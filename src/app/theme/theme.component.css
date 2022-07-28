@@ -1,0 +1,24 @@
+.theme-msg{
+  text-align: center;
+  font-size: 35px;
+  font-family: serif;
+  padding-top: 5px;
+  margin-top: 10px;
+  color: blueviolet;
+}
+
+.bg-container{
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+  margin-top:-285px ;
+  margin-left:900px ;
+  border-radius: 5px;
+
+}
+.clicked-clr{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}

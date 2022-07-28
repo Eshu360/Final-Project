@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'login';
-}
+  // session:any;
+
+  // saveData(){
+  // let data={id:1,name:'jay'};
+
+  // localStorage.setItem('session',JSON.stringify(data));
+
+  }
+
+
+

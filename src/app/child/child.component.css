@@ -1,0 +1,24 @@
+
+.bg-container{
+  background-color:bisque;
+
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 30px;
+
+}
+.btn-pink{
+  background-color: pink;
+}
+.btn-green{
+  background-color: green;
+  color: #fff;
+}
+.btn-red{
+  background-color: red;
+}
+.btn-black{
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>DL ecosystem</h1>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="success" class="m-3">Hi,{{name}}</button>
+    <button mat-raised-button color="warn" routerLink="/login" (click)="removeData()">Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container >
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/product">Add product</a>
+      <a mat-list-item routerLink="/admin">Admin user</a>
+      <a mat-list-item routerLink="/theme">Theme</a>
+      <a mat-list-item routerLink="/maps">Maps</a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-container>
+    <div style="height:88vh ;">
+      <router-outlet></router-outlet>
+
+    </div>
+  </mat-sidenav-container>
+</mat-sidenav-container>
+
+

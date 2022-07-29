@@ -15,11 +15,11 @@ export class MapsComponent implements OnInit {
   ngOnInit(): void {
 
     let loader=new Loader({
-      apiKey:'AIzaSyBr2DfyQzGqLm2HVFPRUgUIX4BCgiB_zpg'
+      apiKey:''
     });
     loader.load().then(()=>{
       console.log("map loaded")
-      const location = { lat:20.5937, lng: 78.9629 };
+      const location = { lat:17.3850, lng:78.4867 };
 
       this.map=new google.maps.Map(document.getElementById('map')!,{
         center:location,

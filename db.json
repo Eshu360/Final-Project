@@ -1,0 +1,25 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "jagadish",
+      "email": "jagadish@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 1
+    }
+  ],
+  "productList": [
+    {
+      "productName": "mobile",
+      "category": "Electronics",
+      "date": "2022-08-08T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 20000,
+      "Comment": "brand new",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

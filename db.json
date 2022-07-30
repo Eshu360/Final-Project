@@ -6,17 +6,96 @@
       "password": "123",
       "mobile": 123,
       "id": 1
+    },
+    {
+      "fullname": "jaggu1",
+      "email": "jaggu1@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 3
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 4
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 5
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 6
+    },
+    {
+      "fullname": "admin user",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "mobile": 123,
+      "id": 7
+    },
+    {
+      "fullname": "user1",
+      "email": "user@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 8
+    },
+    {
+      "fullname": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 9
+    },
+    {
+      "fullname": "abc",
+      "email": "admin11@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 10
+    },
+    {
+      "fullname": "abcd",
+      "email": "abcd3@gmail.com",
+      "password": "123",
+      "mobile": 123,
+      "id": 11
+    },
+    {
+      "fullname": "Ram",
+      "email": "ram@gmail.com",
+      "password": "123",
+      "mobile": 987654321,
+      "id": 12
     }
   ],
   "productList": [
     {
       "productName": "mobile",
       "category": "Electronics",
-      "date": "2022-08-08T18:30:00.000Z",
+      "date": "2022-07-30T18:30:00.000Z",
       "freshness": "Brand New",
       "price": 20000,
-      "Comment": "brand new",
+      "Comment": "new",
       "id": 1
+    },
+    {
+      "productName": "laptop",
+      "category": "Electronics",
+      "date": "2022-08-03T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 20000,
+      "Comment": "new",
+      "id": 2
     }
   ],
   "profile": {

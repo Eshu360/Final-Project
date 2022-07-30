@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [options]="barChartOptions"
+        [labels]="barChartLabels"
+        [legend]="barChartLegends"
+        [type]="barChartType"
+        (chartHover)="chartHovered($event)"
+        >
+      </canvas>
+    </div>
+    <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button> -->
+    <button mat-button mat-raised-button color="primary" routerLink="/dashboard" >Back to home</button>
+  </div>
+</div>

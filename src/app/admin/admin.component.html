@@ -1,1 +1,9 @@
-<p>admin works!</p>
+<h1 class="admin">Welcome to admin user</h1>
+<div class="users-list">
+<p>Back End data-{{userList |json}}</p>
+
+</div>
+<button class="btn btn-secondary m-3" routerLink="/dashboard">click to home</button>
+
+<button class="btn btn-primary m-3" (click)="showData()">Show data</button>
+<!-- <button class="btn btn-danger m-3" (click)="resetData()">Reset Data</button> -->

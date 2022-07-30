@@ -33,7 +33,8 @@ login(){
     this.loginForm.reset();
     this.router.navigate(['dashboard']);
     localStorage.setItem('session',JSON.stringify(user.fullname))
-    localStorage.setItem('role',JSON.stringify(user.fullname));
+    localStorage.setItem('email',JSON.stringify(user.email))
+
   }else{
     alert("user not found")
   }

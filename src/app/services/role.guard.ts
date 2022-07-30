@@ -12,13 +12,17 @@ export class RoleGuard implements CanActivate {
   constructor(private auth: ApiService, private router:Router){}
 
   canActivate(){
-    if(localStorage.getItem('role')=='admin'){
+    if(this.auth.isAdmin()){
       return true
-    } return true
+    }
+    alert("you don't have rights ")
+    this.router.navigate(['dashboard']);
+    return false
+  }
 
 
     // this.router.navigate(['login']);
 
   }
 
-}
+

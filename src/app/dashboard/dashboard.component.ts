@@ -27,7 +27,8 @@ export class DashboardComponent implements OnInit {
   }
   removeData(){
     localStorage.removeItem(this.name);
-    localStorage.clear();
+    //  localStorage.clear();
+
     // alert(this.name)
 
   }

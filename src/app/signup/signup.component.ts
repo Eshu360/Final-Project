@@ -25,17 +25,20 @@ export class SignupComponent implements OnInit {
     })
 
   }
+
   signUp(){
     this.http.post<any>("http://localhost:4000/signupUsers", this.signupForms.value)
 
     .subscribe(res=>{
       alert("signup successfull");
+      localStorage.setItem('credentials',JSON.stringify(this.signupForms.value));
       this.signupForms.reset();
       this.router.navigate(['login']);
       // localStorage.setItem('session',JSON.stringify(this.signupForms.value.fullname))
     },err=>{
       alert("something went wrong")
     })
+    console.log(this.signupForms.value)
     }
 
 

@@ -19,6 +19,8 @@ import {NgxPrintModule} from 'ngx-print';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { ThemeComponent } from './theme/theme.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { ThemeComponent } from './theme/theme.component';
      ChildComponent,
      MapsComponent,
      ChartsComponent,
+     NotFoundComponent,
+     BannerComponent,
 
   ],
   imports: [

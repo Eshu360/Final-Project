@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
     .subscribe(res=>{
       alert("signup successfull");
       localStorage.setItem('credentials',JSON.stringify(this.signupForms.value));
+      localStorage.setItem('password',JSON.stringify(this.signupForms.value.password))
       this.signupForms.reset();
       this.router.navigate(['login']);
       // localStorage.setItem('session',JSON.stringify(this.signupForms.value.fullname))

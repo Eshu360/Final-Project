@@ -1,81 +1,39 @@
 {
   "signupUsers": [
     {
-      "fullname": "jagadish",
-      "email": "jagadish@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 1
-    },
-    {
-      "fullname": "jaggu1",
-      "email": "jaggu1@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 3
-    },
-    {
-      "fullname": "admin",
-      "email": "admin@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 4
-    },
-    {
-      "fullname": "admin",
-      "email": "admin@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 5
-    },
-    {
-      "fullname": "admin",
-      "email": "admin@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 6
-    },
-    {
-      "fullname": "admin user",
-      "email": "admin@gmail.com",
-      "password": "admin123",
-      "mobile": 123,
-      "id": 7
-    },
-    {
-      "fullname": "user1",
-      "email": "user@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 8
-    },
-    {
-      "fullname": "admin1",
-      "email": "admin1@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 9
-    },
-    {
-      "fullname": "abc",
-      "email": "admin11@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 10
-    },
-    {
-      "fullname": "abcd",
-      "email": "abcd3@gmail.com",
-      "password": "123",
-      "mobile": 123,
-      "id": 11
-    },
-    {
       "fullname": "Ram",
       "email": "ram@gmail.com",
       "password": "123",
       "mobile": 987654321,
       "id": 12
+    },
+    {
+      "fullname": "jay",
+      "email": "jay@gmail.com",
+      "password": "12345",
+      "mobile": 987654321,
+      "id": 13
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "mobile": 9876543232,
+      "id": 14
+    },
+    {
+      "fullname": "chandu",
+      "email": "chandu@gmail.com",
+      "password": "chandu123",
+      "mobile": 12345678,
+      "id": 16
+    },
+    {
+      "fullname": "jagadish",
+      "email": "jagadish@gmail.com",
+      "password": "123",
+      "mobile": 987654321,
+      "id": 17
     }
   ],
   "productList": [
@@ -96,6 +54,24 @@
       "price": 20000,
       "Comment": "new",
       "id": 2
+    },
+    {
+      "productName": "tamoto",
+      "category": "Vegetables",
+      "date": "2022-07-31T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 25,
+      "Comment": "freshly",
+      "id": 3
+    },
+    {
+      "productName": "headphones",
+      "category": "Electronics",
+      "date": "2022-07-28T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 5000,
+      "Comment": "new",
+      "id": 4
     }
   ],
   "profile": {

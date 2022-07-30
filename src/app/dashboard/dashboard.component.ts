@@ -8,6 +8,7 @@ import { SignupComponent } from '../signup/signup.component';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  opened=false
 
   // @ViewChild(SignupComponent) child !: SignupComponent;
   name:any
@@ -27,7 +28,7 @@ export class DashboardComponent implements OnInit {
   }
   removeData(){
     localStorage.removeItem(this.name);
-    //  localStorage.clear();
+     localStorage.clear();
 
     // alert(this.name)
 

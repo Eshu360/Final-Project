@@ -23,6 +23,9 @@ export class ApiService {
   }
  deletProduct(id:number){
   return this.http.delete<any>("http://localhost:4000/productList/"+id);
+ }
+ deleteDataTable(id:number){
+  return this.http.delete<any>("http://localhost:4000/signupUsers/"+id);
 
  }
 
@@ -34,8 +37,11 @@ export class ApiService {
  isAdmin(){
   let email:any=localStorage.getItem('email');
   email=(JSON.parse(email))
+  let password:any=localStorage.getItem('password')
+  password=JSON.parse(password)
   console.log(email)
-  if (email ==="admin@gmail.com"){
+  console.log(password)
+  if (email ==="admin@gmail.com" ){
     console.log("admin found")
     return true
   }else{

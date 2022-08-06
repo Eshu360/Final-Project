@@ -2,6 +2,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { AdminComponent } from './admin/admin.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BannerComponent } from './banner/banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { ChartsComponent } from './charts/charts.component';
@@ -16,12 +17,12 @@ import {MaterialModule} from './material/material.module';
 import { NgChartsModule } from 'ng2-charts';
 import { NgModule } from '@angular/core';
 import {NgxPrintModule} from 'ngx-print';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { ThemeComponent } from './theme/theme.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { BannerComponent } from './banner/banner.component';
-
+import { ToastrModule } from 'ngx-toastr';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,9 @@ import { BannerComponent } from './banner/banner.component';
     HttpClientModule,
     MaterialModule,
     NgxPrintModule,
-    NgChartsModule
+    NgChartsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({positionClass:'toast-top-center'})
   ],
   providers: [],
   bootstrap: [AppComponent]

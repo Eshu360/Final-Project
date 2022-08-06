@@ -1,13 +1,6 @@
 {
   "signupUsers": [
     {
-      "fullname": "Ram",
-      "email": "ram@gmail.com",
-      "password": "123",
-      "mobile": 987654321,
-      "id": 12
-    },
-    {
       "fullname": "jay",
       "email": "jay@gmail.com",
       "password": "12345",
@@ -34,13 +27,41 @@
       "password": "123",
       "mobile": 987654321,
       "id": 17
+    },
+    {
+      "fullname": "ravi",
+      "email": "ravi@gmail.com",
+      "password": "ravi123",
+      "mobile": 9876754332,
+      "id": 18
+    },
+    {
+      "fullname": "naveen",
+      "email": "naveen@gmail.com",
+      "password": "naveen123",
+      "mobile": 9989764532,
+      "id": 19
+    },
+    {
+      "fullname": "krishna",
+      "email": "krishna@gmail.com",
+      "password": "123",
+      "mobile": 987654321,
+      "id": 20
+    },
+    {
+      "fullname": "uday",
+      "email": "uday@gmail.com",
+      "password": "uday123",
+      "mobile": 970082461,
+      "id": 21
     }
   ],
   "productList": [
     {
       "productName": "mobile",
       "category": "Electronics",
-      "date": "2022-07-30T18:30:00.000Z",
+      "date": "2022-08-01T18:30:00.000Z",
       "freshness": "Brand New",
       "price": 20000,
       "Comment": "new",
@@ -56,15 +77,6 @@
       "id": 2
     },
     {
-      "productName": "tamoto",
-      "category": "Vegetables",
-      "date": "2022-07-31T18:30:00.000Z",
-      "freshness": "Brand New",
-      "price": 25,
-      "Comment": "freshly",
-      "id": 3
-    },
-    {
       "productName": "headphones",
       "category": "Electronics",
       "date": "2022-07-28T18:30:00.000Z",
@@ -72,6 +84,24 @@
       "price": 5000,
       "Comment": "new",
       "id": 4
+    },
+    {
+      "productName": "iphone",
+      "category": "Electronics",
+      "date": "2022-08-08T18:30:00.000Z",
+      "freshness": "Brand New",
+      "price": 20000,
+      "Comment": "New one",
+      "id": 5
+    },
+    {
+      "productName": "laptop1",
+      "category": "Electronics",
+      "date": "2022-08-10T18:30:00.000Z",
+      "freshness": "Second Hand",
+      "price": 15000,
+      "Comment": "seconds",
+      "id": 6
     }
   ],
   "profile": {

@@ -11,6 +11,7 @@ export class ChildComponent implements OnInit {
   public green={backgroundColor: 'green'};
   public black={backgroundColor: 'black'};
   public red={backgroundColor: 'red'};
+  count=0;
 
   @Output() public childInfo=new EventEmitter();
   constructor() { }
@@ -34,6 +35,12 @@ export class ChildComponent implements OnInit {
   clickRed(){
     this.childInfo.emit(this.red)
   }
+onClick(type :string){
 
+  type==='+'?this.count++:this.count--
+  console.log(this.count)
+  this.childInfo.emit(this.count)
+
+}
 
 }

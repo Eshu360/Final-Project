@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-admin',
@@ -23,7 +24,7 @@ export class AdminComponent implements OnInit {
 
 
 
-  constructor(private http:HttpClient,private api:ApiService) { }
+  constructor(private http:HttpClient,private api:ApiService,private toastr: ToastrService) { }
 
   ngOnInit(): void {
     // let data:any=localStorage.getItem('credentials')
@@ -55,12 +56,14 @@ export class AdminComponent implements OnInit {
     this.api.deleteDataTable(id)
     .subscribe({
       next:(res)=>{
-        alert("data deleted Successfully")
+        // alert("data deleted Successfully")
+        this.toastr.success("Data deleted succesfully")
         this.showData()
 
       },
       error:()=>{
-        alert("Error while deleting record")
+        // alert("Error while deleting record")
+        this.toastr.warning("Error while deleting record")
       }
     })
   }

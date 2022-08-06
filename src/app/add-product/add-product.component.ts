@@ -6,6 +6,7 @@ import { DailogComponent } from '../dailog/dailog.component'
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-product',
@@ -20,7 +21,7 @@ export class AddProductComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor (private dialog: MatDialog, private api:ApiService){
+  constructor (private dialog: MatDialog, private api:ApiService,private toastr: ToastrService){
 
   }
   ngOnInit(): void {
@@ -47,7 +48,8 @@ export class AddProductComponent implements OnInit {
         this.dataSource.sort=this.sort;
       },
       error:(err)=>{
-        alert("Error while fetching records");
+        // alert("Error while fetching records");
+        this.toastr.warning("Error while fetching records")
       }
     })
 
@@ -68,11 +70,13 @@ export class AddProductComponent implements OnInit {
     this.api.deletProduct(id)
     .subscribe({
       next:(res)=>{
-        alert("Product deleted Successfully")
+        // alert("Product deleted Successfully")
+        this.toastr.success("Product deleted Successfully")
         this.getAllProducts()
       },
       error:()=>{
-        alert("Error while deleting record")
+        // alert("Error while deleting record")
+        this.toastr.warning("Error while deleting record")
       }
     })
   }

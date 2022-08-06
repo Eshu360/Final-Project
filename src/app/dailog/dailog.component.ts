@@ -3,7 +3,8 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { ApiService } from '../services/api.service';
-import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog'
+import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-dailog',
@@ -18,7 +19,7 @@ export class DailogComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder, private api : ApiService ,
     @Inject(MAT_DIALOG_DATA) public editData:any,
-    private dailogref:MatDialogRef<DailogComponent>) { }
+    private dailogref:MatDialogRef<DailogComponent>,private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.productForm= this.formBuilder.group({
@@ -50,12 +51,14 @@ export class DailogComponent implements OnInit {
         this.api.postProduct(this.productForm.value)
         .subscribe({
           next:(_res:any)=>{
-            alert("Product added successfully")
+            // alert("Product added successfully")
+            this.toastr.success("Product added successfully")
             this.productForm.reset();
             this.dailogref.close('save');
           },
           error:()=>{
-            alert("Error while adding the product")
+            // alert("Error while adding the product")
+            this.toastr.warning("Error while adding the product")
 
           }
         })
@@ -70,12 +73,14 @@ export class DailogComponent implements OnInit {
     this.api.putProduct(this.productForm.value,this.editData.id)
     .subscribe({
       next:(res)=>{
-        alert("Product Updated Successfully")
+        // alert("Product Updated Successfully")
+        this.toastr.success("Product Updated Successfully")
         this.productForm.reset();
         this.dailogref.close('updated');
           },
           error:()=>{
             alert("Error while updating the record")
+            this.toastr.info("Error while updating the record")
           }
     })
   }

@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import {RoleGuard} from './services/role.guard';
 import { SignupComponent } from './signup/signup.component';
 import { ThemeComponent } from './theme/theme.component';
+import { CrudComponent } from './crud/crud.component';
 
 const routes: Routes = [
   {path:'',component:BannerComponent,pathMatch:'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [
  {path:'theme',component:ThemeComponent,canActivate:[AuthGuard]},
  {path:'maps',component:MapsComponent,canActivate:[AuthGuard]},
  {path:'charts',component:ChartsComponent,canActivate:[AuthGuard]},
+ {path:'crud',component:CrudComponent,canActivate:[AuthGuard]},
  {path:"**", component:NotFoundComponent,canActivate:[AuthGuard]}
 
 

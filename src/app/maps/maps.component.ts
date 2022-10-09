@@ -15,7 +15,7 @@ export class MapsComponent implements OnInit {
   ngOnInit(): void {
 
     let loader=new Loader({
-      apiKey:''
+      apiKey:'AIzaSyBr2DfyQzGqLm2HVFPRUgUIX4BCgiB_zpg'
     });
     loader.load().then(()=>{
       console.log("map loaded")

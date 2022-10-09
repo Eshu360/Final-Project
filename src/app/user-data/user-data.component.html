@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Edit your data</h1>
+<form>
+  <div mat-dialog-content>
+    <mat-form-field appearance="outline">
+      <mat-label>User Name</mat-label>
+      <input matInput placeholder="Name" formControlName="userName">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Name" formControlName="password">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Name" formControlName="email">
+    </mat-form-field>
+
+
+  </div >
+</form>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left:8px ;" mat-raised-button color="primary"  >update</button>
+
+</div>

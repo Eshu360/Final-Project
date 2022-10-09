@@ -22,6 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { ThemeComponent } from './theme/theme.component';
 import { ToastrModule } from 'ngx-toastr';
+import { UserDataComponent } from './user-data/user-data.component';
+import { CrudComponent } from './crud/crud.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
      ChartsComponent,
      NotFoundComponent,
      BannerComponent,
+     UserDataComponent,
+     CrudComponent,
 
   ],
   imports: [

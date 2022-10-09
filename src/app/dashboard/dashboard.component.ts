@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialog} from '@angular/material/dialog';
 
 import { SignupComponent } from '../signup/signup.component';
+import { UserDataComponent } from '../user-data/user-data.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +14,8 @@ export class DashboardComponent implements OnInit {
 
   // @ViewChild(SignupComponent) child !: SignupComponent;
   name:any
-  constructor() { }
+
+  constructor(private dialog: MatDialog) { }
 
   // ngAfterViewInit(): void {
   //   // console.log(this.child.userName);
@@ -24,6 +27,17 @@ export class DashboardComponent implements OnInit {
     let name:any=localStorage.getItem('session')
     this.name=JSON.parse(name)
 
+
+  }
+  openDialog() {
+    this.dialog.open(UserDataComponent,{
+      width : '30%'
+
+      }).afterClosed().subscribe((val: string)=>{
+        if(val==="save"){
+
+        }
+      })
 
   }
   removeData(){

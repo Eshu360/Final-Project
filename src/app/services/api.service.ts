@@ -28,7 +28,19 @@ export class ApiService {
   return this.http.delete<any>("http://localhost:4000/signupUsers/"+id);
 
  }
+ postCrudData(data : any){
+  return this.http.post<any>("http://localhost:4000/crud",data)
+}
+getCrudData(){
+  return this.http.get<any>("http://localhost:4000/crud/");
+}
+editCrudData(data : any,id:number){
+  return this.http.put<any>("http://localhost:4000/crud/"+id,data)
+}
+deleteCrudData(id:number){
+  return this.http.delete<any>("http://localhost:4000/crud/"+id);
 
+ }
  isLoggedIn(){
   console.log(localStorage.getItem('email'))
   return !!localStorage.getItem('session');

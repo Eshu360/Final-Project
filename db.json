@@ -55,6 +55,13 @@
       "password": "uday123",
       "mobile": 970082461,
       "id": 21
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 22
     }
   ],
   "productList": [
@@ -104,7 +111,33 @@
       "id": 6
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "crud": [
+    {
+      "FirstName": "jagadish",
+      "SecondName": "WA",
+      "phoneNumber": "EQFWQS",
+      "empId": "AS",
+      "date": "2022-10-06T18:30:00.000Z",
+      "Comment": "QS",
+      "id": 3
+    },
+    {
+      "FirstName": "jagadish12q",
+      "SecondName": "WA",
+      "phoneNumber": "EQFWQS",
+      "empId": "AS",
+      "date": "2022-10-06T18:30:00.000Z",
+      "Comment": "QS",
+      "id": 6
+    },
+    {
+      "FirstName": "jagadishbabu",
+      "SecondName": "jay1",
+      "phoneNumber": "12345",
+      "empId": "5448",
+      "date": "2022-10-08T18:30:00.000Z",
+      "Comment": "commts",
+      "id": 9
+    }
+  ]
 }

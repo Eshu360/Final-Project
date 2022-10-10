@@ -12,6 +12,7 @@ export class CrudComponent implements OnInit {
   crudForm !: FormGroup
   crudDataList:any;
   editData:any;
+  actionBtn  :string ="save";
   constructor(private formBuilder: FormBuilder, private api : ApiService, ) { }
 
   ngOnInit(): void {
@@ -32,7 +33,7 @@ export class CrudComponent implements OnInit {
 
   // }
   cardClicked(id:any){
-
+    this.actionBtn="update";
     this.editData=this.crudDataList[id]
     this.crudForm.controls['FirstName'].setValue(this.editData.FirstName);
     this.crudForm.controls['SecondName'].setValue(this.editData.SecondName);

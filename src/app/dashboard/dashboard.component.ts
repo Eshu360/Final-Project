@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialog} from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 
-import { SignupComponent } from '../signup/signup.component';
 import { UserDataComponent } from '../user-data/user-data.component';
 
 @Component({
@@ -10,42 +10,45 @@ import { UserDataComponent } from '../user-data/user-data.component';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  opened=false
+  opened = false
 
-  // @ViewChild(SignupComponent) child !: SignupComponent;
-  name:any
+  name: any
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private routers: Router, private active_router: ActivatedRoute) { }
 
-  // ngAfterViewInit(): void {
-  //   // console.log(this.child.userName);
-  //   // alert(this.child.userName)
-
-  // }
 
   ngOnInit(): void {
-    let name:any=localStorage.getItem('session')
-    this.name=JSON.parse(name)
+    let name: any = localStorage.getItem('session')
+    this.name = JSON.parse(name)
 
 
   }
   openDialog() {
-    this.dialog.open(UserDataComponent,{
-      width : '30%'
+    this.dialog.open(UserDataComponent, {
+      width: '30%'
 
-      }).afterClosed().subscribe((val: string)=>{
-        if(val==="save"){
+    }).afterClosed().subscribe((val: string) => {
+      if (val === "save") {
 
-        }
-      })
+      }
+    })
 
   }
-  removeData(){
+  removeData() {
     localStorage.removeItem(this.name);
-     localStorage.clear();
+    localStorage.clear();
 
-    // alert(this.name)
 
+  }
+
+  product_button() {
+
+    this.routers.navigate(["dashboard/product"])
+
+  }
+
+  charts_btn() {
+    this.routers.navigate(["dashboard/charts/barchart"])
   }
 
 }

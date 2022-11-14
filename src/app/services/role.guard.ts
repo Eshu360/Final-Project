@@ -9,22 +9,22 @@ import { ToastrService } from 'ngx-toastr';
   providedIn: 'root'
 })
 export class RoleGuard implements CanActivate {
-  role:any
-  constructor(private auth: ApiService, private router:Router,private toastr: ToastrService){}
+  role: any
+  constructor(private auth: ApiService, private router: Router, private toastr: ToastrService) { }
 
-  canActivate(){
-    if(this.auth.isAdmin()){
+  canActivate() {
+    if (this.auth.isAdmin()) {
       return true
     }
     // alert("you don't have rights ")
     this.toastr.warning("You don't have rights!!");
-    this.router.navigate(['dashboard']);
+    this.router.navigate(['dashboard/product']);
     return false
   }
 
 
-    // this.router.navigate(['login']);
+  // this.router.navigate(['login']);
 
-  }
+}
 
 

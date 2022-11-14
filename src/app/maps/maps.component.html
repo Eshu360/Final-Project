@@ -1,4 +1,4 @@
-<button class="btn btn-secondary" routerLink="/dashboard">click to home</button>
-<div class="full" id="map">
+<google-map height="500px" width="100%" [zoom]="zoom" [center]="center" [options]="options"></google-map>
 
-</div>
+<button (click)="zoomIn()">Zoom In</button>
+<button (click)="zoomOut()">Zoom Out</button>

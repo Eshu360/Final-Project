@@ -1,24 +1,22 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <button mat-icon-button>
-      <!-- <mat-icon (click)="sidenav.toggle()">menu</mat-icon> -->
       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
     </button>
     <h1>DL ecosystem</h1>
     <span class="example-spacer"></span>
-    <button mat-raised-button color="success" class="m-3" (click)="openDialog()">Hi,{{name}}</button>
-    <button mat-raised-button color="warn" routerLink="/login" (click)="removeData()">Logout</button>
+    <button mat-raised-button color="success" disabled="false" class="m-3" (click)="openDialog()">Hi,{{name}}</button>
+    <button mat-raised-button color="warn" disabled="false" routerLink="/login" (click)="removeData()">Logout</button>
   </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav-container >
+<mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" opened>
     <mat-nav-list class="nav-list">
-      <a mat-list-item routerLink="/product" routerLinkActive="active">Add product</a>
-      <a mat-list-item routerLink="/admin">Admin user</a>
-      <a mat-list-item routerLink="/theme">Theme</a>
-      <a mat-list-item routerLink="/maps">Maps</a>
-      <a mat-list-item routerLink="/charts">Charts</a>
-      <a mat-list-item routerLink="/crud">Crud</a>
+      <a mat-list-item routerLinkActive="active" (click)="product_button()">Add product</a>
+      <a mat-list-item routerLink="admin">Admin user</a>
+      <a mat-list-item routerLink="theme">Theme</a>
+      <a mat-list-item routerLink="maps">Maps</a>
+      <a mat-list-item routerLink="charts" (click)="charts_btn()">Charts</a>
     </mat-nav-list>
 
   </mat-sidenav>
@@ -29,5 +27,3 @@
     </div>
   </mat-sidenav-container>
 </mat-sidenav-container>
-
-

@@ -1,0 +1,8 @@
+<div>
+    <div style="display: block">
+        <canvas baseChart [datasets]="barChartData" [options]="barChartOptions" [labels]="barChartLabels"
+            [legend]="barChartLegends" [type]="barChartType" (chartHover)="chartHovered($event)"
+            [plugins]="barChartPlugins">
+        </canvas>
+    </div>
+</div>

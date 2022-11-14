@@ -1,17 +1,15 @@
 <h1 class="theme-msg">Welcome to themes</h1>
 
 <app-child (childInfo)="msg=$event"></app-child>
-<!-- <h1>{{msg}}</h1> -->
+
 
 <div [ngStyle]="msg" class="bg-container">
 <p class="clicked-clr">you clicked "{{msg.backgroundColor}}"</p>
 
 </div>
 
-<!-- <p class="count">{{msg.count}}</p> -->
+
 
 <button class="btn btn-secondary m-5" routerLink="/dashboard">Back to home</button>
-<!-- <button class="btn btn-secondary m-3" (click)="onClick('+')">+</button>
-    <button class="btn btn-danger m-3" (click)="onClick('-')">-</button>
-    <p>{{count}}</p> -->
+
 

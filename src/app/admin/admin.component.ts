@@ -27,21 +27,14 @@ export class AdminComponent implements OnInit {
   constructor(private http:HttpClient,private api:ApiService,private toastr: ToastrService) { }
 
   ngOnInit(): void {
-    // let data:any=localStorage.getItem('credentials')
-    // this.data=JSON.parse(data)
-    // console.log(data)
 
   }
   showData(){
-    // localStorage.clear();
-    // localStorage.removeItem(this.data);
-    this.http.get<any>("http://localhost:4000/signupUsers")
+    this.http.get<any>("http://localhost:3000/signupUsers")
     .subscribe(res=>{
     console.log(res)
     this.userList=res
-    // console.log(res.length)
     for (var i=0;i<res.length;i++){
-      // console.log(res[i].fullname)
       this.nameList[i]=res[i]
       console.log(typeof(this.nameList))
 
@@ -56,14 +49,12 @@ export class AdminComponent implements OnInit {
     this.api.deleteDataTable(id)
     .subscribe({
       next:(res)=>{
-        // alert("data deleted Successfully")
-        this.toastr.success("Data deleted succesfully")
+        alert("data deleted Successfully")
         this.showData()
 
       },
       error:()=>{
-        // alert("Error while deleting record")
-        this.toastr.warning("Error while deleting record")
+        alert("Error while deleting record")
       }
     })
   }

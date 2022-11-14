@@ -10,7 +10,7 @@ export class ChildComponent implements OnInit {
   public pink={backgroundColor: 'pink'};
   public green={backgroundColor: 'green'};
   public black={backgroundColor: 'black'};
-  public red={backgroundColor: 'red'};
+  public blue={backgroundColor: 'blue'};
   count=0;
 
   @Output() public childInfo=new EventEmitter();
@@ -23,8 +23,6 @@ export class ChildComponent implements OnInit {
   }
   clickPink(){
     this.childInfo.emit(this.pink)
-
-
   }
   clickGreen(){
     this.childInfo.emit(this.green)
@@ -32,8 +30,8 @@ export class ChildComponent implements OnInit {
   clickBlack(){
     this.childInfo.emit(this.black)
   }
-  clickRed(){
-    this.childInfo.emit(this.red)
+  clickBlue(){
+    this.childInfo.emit(this.blue)
   }
 onClick(type :string){
 

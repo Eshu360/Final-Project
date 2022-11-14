@@ -51,13 +51,11 @@ export class DailogComponent implements OnInit {
         this.api.postProduct(this.productForm.value)
         .subscribe({
           next:(_res:any)=>{
-            // alert("Product added successfully")
             this.toastr.success("Product added successfully")
             this.productForm.reset();
             this.dailogref.close('save');
           },
           error:()=>{
-            // alert("Error while adding the product")
             this.toastr.warning("Error while adding the product")
 
           }
@@ -73,13 +71,11 @@ export class DailogComponent implements OnInit {
     this.api.putProduct(this.productForm.value,this.editData.id)
     .subscribe({
       next:(res)=>{
-        // alert("Product Updated Successfully")
         this.toastr.success("Product Updated Successfully")
         this.productForm.reset();
         this.dailogref.close('updated');
           },
           error:()=>{
-            alert("Error while updating the record")
             this.toastr.info("Error while updating the record")
           }
     })

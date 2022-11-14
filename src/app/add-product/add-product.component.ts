@@ -48,7 +48,6 @@ export class AddProductComponent implements OnInit {
         this.dataSource.sort=this.sort;
       },
       error:(err)=>{
-        // alert("Error while fetching records");
         this.toastr.warning("Error while fetching records")
       }
     })

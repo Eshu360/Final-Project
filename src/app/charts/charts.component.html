@@ -1,17 +1,16 @@
-<div>
-  <div>
-    <div style="display: block">
-      <canvas baseChart
-        [datasets]="barChartData"
-        [options]="barChartOptions"
-        [labels]="barChartLabels"
-        [legend]="barChartLegends"
-        [type]="barChartType"
-        (chartHover)="chartHovered($event)"
-        >
-      </canvas>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="linechart">Line Chart</a>
+      <a mat-list-item routerLinkActive="active" routerLink="barchart">Bar Chart</a>
+      <a mat-list-item routerLink="piechart">Pie Chart</a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-container>
+    <div style="height:88vh ;">
+      <router-outlet></router-outlet>
+
     </div>
-    <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button> -->
-    <button mat-button mat-raised-button color="primary" routerLink="/dashboard" >Back to home</button>
-  </div>
-</div>
+  </mat-sidenav-container>
+</mat-sidenav-container>

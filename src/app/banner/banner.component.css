@@ -1,5 +1,5 @@
 .bg-container{
-  background-color: #46c7ba;
+  background-color: rgb(10, 10, 10);
   width: 100vw;
   height: 100vh;
 }
@@ -12,6 +12,7 @@
   font-size: 40px;
   font-family: 'serif';
   padding-top: 20px;
+  color: white;
 
 }
 .log-in{

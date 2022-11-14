@@ -1,79 +1,28 @@
 {
   "signupUsers": [
     {
-      "fullname": "jay",
-      "email": "jay@gmail.com",
-      "password": "12345",
-      "mobile": 987654321,
-      "id": 13
-    },
-    {
       "fullname": "admin",
       "email": "admin@gmail.com",
-      "password": "admin123",
-      "mobile": 9876543232,
+      "password": "1",
+      "mobile": 12,
       "id": 14
     },
     {
-      "fullname": "chandu",
-      "email": "chandu@gmail.com",
-      "password": "chandu123",
-      "mobile": 12345678,
+      "fullname": "eswar",
+      "email": "eswar@gmail.com",
+      "password": "12",
+      "mobile": 12,
+      "id": 15
+    },
+    {
+      "fullname": "prahlad",
+      "email": "prahlad@gmail.com",
+      "password": "12",
+      "mobile": 12,
       "id": 16
-    },
-    {
-      "fullname": "jagadish",
-      "email": "jagadish@gmail.com",
-      "password": "123",
-      "mobile": 987654321,
-      "id": 17
-    },
-    {
-      "fullname": "ravi",
-      "email": "ravi@gmail.com",
-      "password": "ravi123",
-      "mobile": 9876754332,
-      "id": 18
-    },
-    {
-      "fullname": "naveen",
-      "email": "naveen@gmail.com",
-      "password": "naveen123",
-      "mobile": 9989764532,
-      "id": 19
-    },
-    {
-      "fullname": "krishna",
-      "email": "krishna@gmail.com",
-      "password": "123",
-      "mobile": 987654321,
-      "id": 20
-    },
-    {
-      "fullname": "uday",
-      "email": "uday@gmail.com",
-      "password": "uday123",
-      "mobile": 970082461,
-      "id": 21
-    },
-    {
-      "fullname": "",
-      "email": "",
-      "password": "",
-      "mobile": "",
-      "id": 22
     }
   ],
   "productList": [
-    {
-      "productName": "mobile",
-      "category": "Electronics",
-      "date": "2022-08-01T18:30:00.000Z",
-      "freshness": "Brand New",
-      "price": 20000,
-      "Comment": "new",
-      "id": 1
-    },
     {
       "productName": "laptop",
       "category": "Electronics",
@@ -111,42 +60,5 @@
       "id": 6
     }
   ],
-  "crud": [
-    {
-      "FirstName": "jagadish",
-      "SecondName": "WA",
-      "phoneNumber": "EQFWQS",
-      "empId": "AS",
-      "date": "2022-10-06T18:30:00.000Z",
-      "Comment": "QS",
-      "id": 3
-    },
-    {
-      "FirstName": "jagadish12q",
-      "SecondName": "WA",
-      "phoneNumber": "EQFWQS",
-      "empId": "AS",
-      "date": "2022-10-06T18:30:00.000Z",
-      "Comment": "QS",
-      "id": 6
-    },
-    {
-      "FirstName": "jagadishbabu1",
-      "SecondName": "jay1",
-      "phoneNumber": "12345",
-      "empId": "5448",
-      "date": "2022-10-08T18:30:00.000Z",
-      "Comment": "commts",
-      "id": 9
-    },
-    {
-      "FirstName": "jagadish",
-      "SecondName": "jay",
-      "phoneNumber": "12",
-      "empId": "212",
-      "date": "2022-10-18T18:30:00.000Z",
-      "Comment": "2ws",
-      "id": 10
-    }
-  ]
+  "crud": []
 }

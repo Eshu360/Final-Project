@@ -14,38 +14,38 @@ export class LoginComponent implements OnInit {
 
   public loginForm !: FormGroup
 
-  constructor(private formbuilder: FormBuilder, private http:HttpClient, private router: Router,private toastr: ToastrService) { }
+  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formbuilder.group({
-      email:[''],
-      password:['']
+      email: [''],
+      password: ['']
 
     })
   }
-login(){
- this.http.get<any>("http://localhost:4000/signupUsers")
- .subscribe(res=>{
-  const user= res.find((a:any)=>{
-    return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
-  });
-  if(user){
-    // alert("login success");
-    this.toastr.success('Login successfully!',"hi "+user.fullname);
+  login() {
+    this.http.get<any>("http://localhost:3000/signupUsers")
+      .subscribe(res => {
+        const user = res.find((a: any) => {
+          return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
+        });
+        if (user) {
+          alert("login success");
+          this.toastr.success('Login successfully!', "hi " + user.fullname);
 
 
-    this.loginForm.reset();
-    this.router.navigate(['dashboard']);
-    localStorage.setItem('session',JSON.stringify(user.fullname))
-    localStorage.setItem('email',JSON.stringify(user.email))
+          this.loginForm.reset();
+          this.router.navigate(['dashboard/product']);
+          localStorage.setItem('session', JSON.stringify(user.fullname))
+          localStorage.setItem('email', JSON.stringify(user.email))
 
-  }else{
-    // alert("user not found")
-    this.toastr.error('Login failed!');
+        } else {
+          alert("user not found")
+          this.toastr.error('Login failed!');
+        }
+      }, err => {
+        alert("something went wrong")
+        this.toastr.warning('Something went wrong');
+      })
   }
- },err=>{
-  // alert("something went wrong")
-  this.toastr.warning('Something went wrong');
- })
-}
 }

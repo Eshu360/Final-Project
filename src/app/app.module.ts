@@ -12,19 +12,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { MapsComponent } from './maps/maps.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MaterialModule} from './material/material.module';
-import { NgChartsModule } from 'ng2-charts';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MaterialModule } from './material/material.module';
 import { NgModule } from '@angular/core';
-import {NgxPrintModule} from 'ngx-print';
+import { NgxPrintModule } from 'ngx-print';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { ThemeComponent } from './theme/theme.component';
 import { ToastrModule } from 'ngx-toastr';
 import { UserDataComponent } from './user-data/user-data.component';
-import { CrudComponent } from './crud/crud.component';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgChartsModule } from 'ng2-charts';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,17 +37,18 @@ import { CrudComponent } from './crud/crud.component';
     DashboardComponent,
 
     DailogComponent,
-     AddProductComponent,
-     AdminComponent,
-     ThemeComponent,
-     ChildComponent,
-     MapsComponent,
-     ChartsComponent,
-     NotFoundComponent,
-     BannerComponent,
-     UserDataComponent,
-     CrudComponent,
-
+    AddProductComponent,
+    AdminComponent,
+    ThemeComponent,
+    ChildComponent,
+    MapsComponent,
+    ChartsComponent,
+    NotFoundComponent,
+    BannerComponent,
+    UserDataComponent,
+    PieChartComponent,
+    BarChartComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import { CrudComponent } from './crud/crud.component';
     NgxPrintModule,
     NgChartsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot({positionClass:'toast-top-center'})
+    GoogleMapsModule,
+    ToastrModule.forRoot({ positionClass: 'toast-top-center' })
   ],
   providers: [],
   bootstrap: [AppComponent]

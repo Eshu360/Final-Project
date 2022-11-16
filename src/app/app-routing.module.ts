@@ -19,6 +19,7 @@ import { LineChartComponent } from './line-chart/line-chart.component';
 
 const routes: Routes = [
   { path: '', component: BannerComponent, pathMatch: 'full' },
+  { path: 'banner', component: BannerComponent, pathMatch: 'full' },
   //  {path:'', redirectTo:'login', pathMatch:'full'},
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
